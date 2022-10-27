@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Computer Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" ></script>
+</head>
+<body>
+    <div class="header">
+        <h1>COMPUTER LEARNING HUB</h1>
+        <P>A Website Created By Devendra Singh Chauhan</P>
+        <ul class="uline">
+            <li><a class="active" href="index.html">index</a></li>     
+            
+            <!--Notes Button Coding-->
+                <li class="dropdown2">
+                <button class="dropbtn2">NOTES</button>
+                <div class="dropdown-content2">
+                <a href="https://www.w3schools.com/java/">JAVA</a>
+                <a href="https://www.w3schools.com/js/">JAVASCRIPT</a> 
+                <a href="https://www.w3schools.com/html/">HTML</a>
+                <a href="https://www.w3schools.com/EXCEL/index.php">MS EXCEL</a>
+                </div>
+                 </li>
+
+
+            <!-- Videos Button Coding-->
+            <li class="dropdown2">
+                <button class="dropbtn2">VIDEOS</button>
+                <div class="dropdown-content2">
+                <a href="https://www.youtube.com/watch?v=cnca5_bhWdM&list=PLGzI9ohLVWZm_pvzsGAAltsK94EoiQ251">JAVA</a>
+                <a href="https://www.youtube.com/watch?v=35YaUc_dUXw&list=PLGzI9ohLVWZlwhp6b0Sz6oWNU3QRNbPxm">JAVASCRIPT</a>
+                <a href="https://www.youtube.com/watch?v=B0834xU-YOg&list=PLGzI9ohLVWZkyMwxjgzPCfd5haM2gRZ_k">HTML</a>
+                <a href="https://www.youtube.com/watch?v=x_vKjD2FrZQ&list=PLGzI9ohLVWZnGhlD6GSxw2AsLjBa5jX8w">MS EXCEL</a>
+                </div>
+            </li>
+
+            <!--Courses Button Coding-->
+            <li class="dropdown2">
+                <button class="dropbtn2">COURSES</button>
+                <div class="dropdown-content2">
+                    <a href="#">JAVA</a>
+                    <a href="#">JAVASCRIPT</a>
+                    <a href="#">HTML</a>
+                    <a href="#">MS EXCEL</a>
+                  </div>
+            </li> 
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+
+            <label class="spacesecond" for=""></label>
+            <button class="btn1" onclick="search()">Search</button>
+            <input type="text" placeholder="Search..">
+           
+            
+        </ul>
+    </div>
+    <br><br>
+
+    <img class="sideimage" src="./images/frontimg.webp">
+    <div>
+    <div class="slide" style="max-width:800px">
+        <img class="mySlides" src="./images/image2.jpg" style="width:100%">
+        <img class="mySlides" src="./images/fetch_records.jpg" style="width:100%">
+        <img class="mySlides" src="./images/image7.jpg" style="width:100%">
+        <img class="mySlides" src="./images/shadow.jpg" style="width:100%">
+        <img class="mySlides" src="./images/insert_data.jpg" style="width:100%">
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+            }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 9000);    
+        }
+    </script>
+    </div>  
+    <p class="prg">A computer is a digital electronic machine that can be programmed to carry out sequences of arithmetic or logical operations (computation) automatically. Modern computers can perform generic sets of operations known as programs. These programs enable computers to perform a wide range of tasks. A computer system is a "complete" computer that includes the hardware, operating system (main software), and peripheral equipment needed and used for "full" operation. This term may also refer to a group of computers that are linked and function together, such as a computer network or computer cluster.
+        A broad range of industrial and consumer products use computers as control systems. Simple special-purpose devices like microwave ovens and remote controls are included, as are factory devices like industrial robots and computer-aided design, as well as general-purpose devices like personal computers and mobile devices like smartphones. Computers power the Internet, which links billions of other computers and users.       
+        Early computers were meant to be used only for calculations. Simple manual instruments like the abacus have aided people in doing calculations since ancient times. Early in the Industrial Revolution, some mechanical devices were built to automate long tedious tasks, such as guiding patterns for looms. More sophisticated electrical machines did specialized analog calculations in the early 20th century. The first digital electronic calculating machines were developed during World War II. The first semiconductor transistors in the late 1940s were followed by the silicon-based MOSFET (MOS transistor) and monolithic integrated circuit (IC) chip technologies in the late 1950s, leading to the microprocessor and the microcomputer revolution in the 1970s. The speed, power and versatility of computers have been increasing dramatically ever since then, with transistor counts increasing at a rapid pace (as predicted by Moore's law), leading to the Digital Revolution during the late 20th to early 21st centuries. 
+        Conventionally, a modern computer consists of at least one processing element, typically a central processing unit (CPU) in the form of a microprocessor, along with some type of computer memory, typically semiconductor memory chips. The processing element carries out arithmetic and logical operations, and a sequencing and control unit can change the order of operations in response to stored information. Peripheral devices include input devices (keyboards, mice, joystick, etc.), output devices (monitor screens, printers, etc.), and input/output devices that perform both functions (e.g., the 2000s-era touchscreen). Peripheral devices allow information to be retrieved from an external source and they enable the result of operations to be saved and retrieved.
+    </p>
+ 
+    <div class="footer">
+        <h2>THANKS FOR VISIT OUR WEBSITE!</h2>
+    </div>
+    <footer class="footer1">
+        <div id="text1">
+        <div id="htmltext1" class="htmltext"><h3>HTML</h3>
+            The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. 
+            It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+            
+        </div>
+        <div id="htmltext2" class="htmltext"><h3>JAVA</h3>
+            Java is a high-level, class-based, object-oriented programming language that 
+            is designed to have as few implementation dependencies as possible. 
+            It is a general-purpose programming language intended to let programmers write once, run anywhere. 
+            </div>
+        <div id="htmltext3" class="htmltext"><h3>JACASCRIPT</h3>
+            JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.
+            It has dynamic typing, prototype-based object-orientation, and first-class functions. 
+           
+            </div>
+        <div id="htmltext4" class="htmltext"><h3>MS EXCEL</h3>
+            Microsoft Excel is a spreadsheet developed by Microsoft for Windows, macOS, Android and iOS. It features calculation or computation capabilities, graphing tools, pivot tables, and a macro programming language called Visual Basic for Applications (VBA).
+            
+            </div>
+        <div id="htmltext5" class="htmltext"><h3>MS POWERPOINT</h3>
+            Microsoft PowerPoint is a powerful slide show presentation program. 
+            It is a standard component of the company's Microsoft Office suite software, and is bundled together with Word, Excel, and other office productivity tools. The program uses slides to convey information rich in multimedia.
+            </div>
+        </div>
+    </footer>
+    <footer id="footer2">
+        <div class="socialsites">
+        <h6><a href="https://www.facebook.com/login/">Facebook</a></h6>
+        <h6><a href="https://www.linkedin.com/login">LinkedIn</a></h6>
+        <h6><a href="https://telegr.am/user_mgt/login">Telegram</a></h6>
+        <h6><a href="https://twitter.com/i/flow/login">Twitter</a></h6>
+        <h6><a href="https://web.whatsapp.com/">Whatsapp</a></h6>
+        <h6><a href="https://www.google.com/">Google</a></h6>
+        <h5>Social Sites : </h5>
+        </div>
+    </footer>
+</body>
+</html>
